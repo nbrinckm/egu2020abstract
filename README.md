@@ -1,2 +1,3 @@
 # egu2020abstract
-Just the try to create an abstract for egu
+Just the try to create an abstract for egu 2020.
+
