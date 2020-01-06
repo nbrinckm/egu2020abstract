@@ -1,38 +1,22 @@
-Put your models in the web - less painful
+Put your models in the web: now is less painful!
 =================================
 
-Todays earth related scientific questions are tend to be more complex and more interdisciplinary than ever before, so
-that there is no change for single persons or even institutions to tackle all aspects of them any more. We need to go
-more into composable and distributed frameworks to tackle these problems.
+Today's Earth-related scientific questions are more complex and more interdisciplinary than ever, so
+much that is extremely challenging for single-domain experts to master all different scientific aspects of the problem at once. As a consequence, modular and distributed frameworks are increasingly gaining momentum, since they allow the collaborative development of complex, multidisciplinary processing solutions.
 
-The technical solution for these is in modern web technologies with a broat variety of standards, protocols and 
-frameworks. While restful services are one of the main drivers of the modern web, they are not suited for dealing
-with scientific processes well. They offer great flexibility, but they tend to be too specifc, too much boundled to
-very specific formats and they are often poorly documented.
+An effective technical implementation focus on the use of modern web technologies with their broad variety of standards, protocols and available development frameworks. RESTful services for instance are one of the main drivers of the modern web, although they are often suboptimal for the implementation of complex scientific processing solutions. In fact, while they offer great flexibility, they also tend to be bounded to very specific formats (and often poorly documented).
 
-However the OGC came by with a standard to allow any kind of process / computation which doesn't have many of the
-drawbacks of restful services: Web processing service. The WPS allows to specify fix input and output formats as well as
-to explore the services with the GetCapabilities and DescribeProcess operations.
+With the introduction of the Web Processing Service (WPS) specifications, the Open Geospatial Consortium (OGC) already in 2005 proposed a standard for the implementation of a new generation of computing modules overcoming most of the drawbacks of the RESTful approach. The WPS allow a flexible specification of input and output formats as well as
+the exploration of the services´capabilities (e.g., with the GetCapabilities and DescribeProcess operations).
 
-But there is the drawback: Since restful services are available for any programming language easily, WPS integration
-are currently mostly boundled to Java, C and Python implementations.
+The main drawback of the WPS approach with respect to RESTful services is that the latter can be easily implemented for any programming language, while the efficient integration of WPS is currently mostly relying on Java, C and Python implementations.
 
-In earth science we are confronted with a huge variety of programming languages and environments. It is simply not possible
-to take all of the scientific programs and convert them into a language for WPS integration. Trying to do so often
-results in conflicts and miss understanding between actual scientists and technical stuff. This may drives us to the
-risk of introducing bugs in data / code conversion processes. Also the maintanance of these hybrid programs is often
-very difficult since most scientists don't deal with web programming and technical stuff don't know enough about the
-actual science.
+In the framework of Earth Science Research we are often confronted with a plethora of programming languages and coding environments, including the use of mixed languages, and with unstructured (sometimes wild) programming practices. Converting already existing complex scientific programs into a language suitable for WPS integration can be a daunting effort and may even result in additional errors being introduced due to conflicts and misunderstandings between the original code authors and the developers working on the WPS integration. Also the maintanance of these hybrid processing components is often
+very difficult since most scientists are not familiar with the technicalities of web programming and conversely the web developers cannot (or do not have the time to) get adequately aquainted with the underlying scientific concepts.
 
-Tackled with these problem in the context of the RIESGOS project, we developed a framework for a Java based WPS Server 
-to run any kind of scientifc scripts or command line programs regardless of the scientific tool chain by running the
-actual code in docker.
-Docker containers are used to encapsulate the running process and docker images to manage dependencies of the program.
-How to call this programs is managed by configuration files: They specify how to call the program, how to give input
-parameters - say command line arguments or input files - and how to read the output of the program - from stdout, output
-files, etc. We included a bunch of predefined ways on how to read and write a variety of formats and a mechanism to
-extend them later.
+Facing these problems in the context of the RIESGOS project we developed an innovative framework for a Java-based WPS Server able to run any kind of scientific code scripts or command line programs. The proposed approach is based on the use of Docker containers encapsulating the running processes, and Docker images to manage all necessary dependencies.
 
-The result is a encapsulated, composable, safe and extendable architecture that allows you as a scientist to put
-your scientific programs right in the web with little to no effort. Once you can run your script in docker, you
-can run it on the web.
+A simple set of ASCII configuration files provides all metadata needed for WPS integration: how to call the program, how to give input parameters - including command line arguments and input files - and how to interpret the output of the program - both from  stdout and from serialized files. Predefined format converters can be easily integrated and later extended to ensure maximum compatilibility with other WPSs.
+
+The result is a encapsulated, modular, safe and extendable architecture that allows scientists to expose
+their scientific programs on the web with little effort, and to collaboratively create complex, multidisciplinary processing pipelines. 
