@@ -1,10 +1,11 @@
 Put your models in the web - less painful
 =================================
 
-Nils Brinckmann (1), Massimiliano Pittore (1), Matthias Rüster (1), Benjamin Proß (2), Juan Camilo Gomez Zapata (1)
+Nils Brinckmann (1), Massimiliano Pittore (2), Matthias Rüster (1), Benjamin Proß (3), Juan Camilo Gomez Zapata (1)
 
 (1) Helmholtz Centre Potsdam German Research Centre for Geosciences, Potsdam, Germany
-(2) 52° North, Münster, Germany
+(2) Eurac Research, Bolzano, Italy
+(3) 52° North, Münster, Germany
 
 Today's Earth-related scientific questions are more complex and more interdisciplinary than ever, so much
 that is extremely challenging for single-domain experts to master all different aspects of the 
