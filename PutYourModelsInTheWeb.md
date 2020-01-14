@@ -10,18 +10,18 @@ frameworks. While restful services are one of the main drivers of the modern web
 with scientific processes well. They offer great flexibility, but they tend to be too specific, too much bound to
 very specific formats and they are often poorly documented.
 
-However the OGC came by with a standard to allow any kind of process / computation which doesn't have many of the
+However the OGC came by with a standard to allow any kind of process / computation which does not have many of the
 drawbacks of restful services: Web processing service. The WPS allows to specify fix input and output formats as well as
 to explore the services with the GetCapabilities and DescribeProcess operations.
 
 But there is the drawback: Since restful services are available for any programming language easily, WPS integration
-are currently mostly boundled to Java, C and Python implementations.
+are currently mostly bound to Java, C and Python implementations.
 
 In earth science we are confronted with a huge variety of programming languages and environments. It is simply not possible
 to take all of the scientific programs and convert them into a language for WPS integration. Trying to do so often
 results in conflicts and miss understanding between actual scientists and technical stuff. This may drives us to the
 risk of introducing bugs in data / code conversion processes. Also the maintenance of these hybrid programs is often
-very difficult since most scientists don't deal with web programming and technical stuff don't know enough about the
+very difficult since most scientists do not deal with web programming and technical stuff do not know enough about the
 actual science.
 
 Tackled with these problem in the context of the RIESGOS project, we developed a framework for a Java based WPS server 
